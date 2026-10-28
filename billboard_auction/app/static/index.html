@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bidboard: auction billboard space</title>
+  <meta name="description" content="Bid on billboard advertising space in your city. Owners list slots, advertisers bid, the highest bid wins when the clock runs out.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E5A43'/%3E%3Crect x='5' y='7' width='22' height='11' fill='%23FFC400'/%3E%3Crect x='14.5' y='18' width='3' height='9' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="site-header" id="header"></header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="container site-footer__row">
+      <span class="site-footer__brand">Bidboard</span>
+      <span>Bids are binding. The highest bid when the clock runs out wins the slot.</span>
+    </div>
+  </footer>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="sr-only" id="announcer" aria-live="polite"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
